@@ -1,0 +1,30 @@
+######################### Mode d'emploi fichier Py #####################################################
+
+Script réalisé sur Deux serveurs Debian 9
+
+Avant de configurer le script veuillez :
+
+installez le serveur LAMP
+installez le serveur Wordpress
+
+installez plugins SSH
+
+#####              wARNING!                                      ####
+Vous pouvez faire un échange de clé avec SSH pour une meilleur sécurité 
+j'ai mi en place dans le fichier yaml une directive pour le mot de passe si besoin
+
+## Pour une meilleur compréhension le backup script est commenté pour chaque ligne 
+
+une fois mi en place :
+
+- Veuillez mettre le fichier à la racine pour un test
+- une fois mi en place utiliser crontab pour une sauvegarde journaliere 
+en exemple : 0 0 * * * /home/***/fichier.py save backup.yaml
+
+
+commande pour lancer une restore
+./script.py restore backup.yaml
+
+
+script fait le 14/11/19 par M.Asselino
+##########################################################################################################
