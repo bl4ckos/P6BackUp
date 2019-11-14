@@ -28,6 +28,21 @@ j'ai mi en place dans le fichier yaml une directive pour le mot de passe si beso
 
 ## Pour une meilleur compréhension le backup script est commenté pour chaque ligne 
 
+## Fichier YAML
+Personnaliser les champs avec les **** ,
+configuration save:
+
+Adresse du serveur distant,
+Nom d'utilisateur,
+
+Indiquer un répértoire de backup,
+Indiquer le répertoire de wordpress,
+
+Configuration restore:
+Adresse du serveur distant,
+Nom d'utilisateur,
+Mot de passe,
+Indiquer le répertoire de wordpress,
 
 ## Deployment
 
