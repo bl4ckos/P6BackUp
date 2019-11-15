@@ -51,6 +51,9 @@ en exemple : 0 0 * * * /home/***/fichier.py save backup.yaml
 commande pour lancer une restore
 ./script.py restore backup.yaml
 
+## Warning
+l'utilisateur devra prévoir l'emplacement du dump dans la conf yaml pour la BDD
+
 ## Authors
 
 * **Marvin Asselino** - *Initial work* - [bl4ckos](https://github.com/bl4ckos)
