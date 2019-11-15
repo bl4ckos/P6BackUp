@@ -77,8 +77,12 @@ def createBackup(file): #creation de la sauvegarde
         tar.add(path)                       # ajouter les fichiers 
 
 def exportBackup(file): #export de la sauvegarde
+  try:
   proc = subprocess.Popen(['scp', Vars['save']['dir'] + file, Vars['save']['user'] + '@' + Vars['save']['ip'] + ':~/'])
-# transfert du fichier 
+  except BaseException as e:
+        logging.error(str(e))
+        logging.error('Problème au niveau de la connexion SSH!!')
+  # transfert du fichier 
 ###### fonction save() = prog principal du script save ######
 def save():
   if checkDiskSpace() >= 1000:  # si disque est supérieur ou égal à 1gb 
