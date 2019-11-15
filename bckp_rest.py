@@ -81,7 +81,7 @@ def exportBackup(file): #export de la sauvegarde
   proc = subprocess.Popen(['scp', Vars['save']['dir'] + file, Vars['save']['user'] + '@' + Vars['save']['ip'] + ':~/'])
   except BaseException as e:
         logging.error(str(e))
-        logging.error('Problème au niveau de la connexion SSH!!')
+        logging.error('Problème au niveau de la connexion SCP!!')
   # transfert du fichier 
 ###### fonction save() = prog principal du script save ######
 def save():
