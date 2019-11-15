@@ -52,7 +52,7 @@ commande pour lancer une restore
 ./script.py restore backup.yaml
 
 ## Warning
-l'utilisateur devra prévoir l'emplacement du dump dans la conf yaml pour la BDD pour un site web
+Ce script ne gère pas l'export/import de base de données. Vous pouvez néanmoins le prévoir en amont et ajouter tout fichier de dump via le fichier de conf yaml, comme n'importe quel autre répertoire de données à sauvegarder/restorer.l'utilisateur devra prévoir l'emplacement du dump dans la conf yaml pour la BDD pour un site web
 
 ## Authors
 
