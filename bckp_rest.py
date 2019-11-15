@@ -26,7 +26,7 @@ def readConf(file): #lecture du fichier de conf
       print(exc)                    # montre moi l'execution 
 ##### specifique restore #####
 def get_BkpFile(aday): #calcul du nom d'un fichier de sauvegarde selon son jour
-    ago = dt.datetime.now() - dt.timedelta(days=aday) # je calcule la date du jour jusqu'a dimanche je sais pas l'expliquer je calcule le delta entre today et une date anterieur ( on remonte de x jours)
+    ago = dt.datetime.now() - dt.timedelta(days=aday) # je calcule le delta entre today et une date anterieur ( on remonte de x jours)
     date = ago.strftime("%Y%m%d")   # je traduis la date du jour avec strftime Année mois et jour collé (dans le format que j'ai besoin)
     bkpfile = "backup" + date + ".tar"    # bkpfile sera nommé backup avec la date du jour et le .tar pour la compression
     return bkpfile     # renvois le fichier bkpfile je sais pas comment l'expliquer 
@@ -64,7 +64,7 @@ def createBackup(file): #creation de la sauvegarde
   except tarfile.CompressionError as e:   # erreur de compression 
     raise CRCError(e)
   now = dt.datetime.now()     
-  ago = now - dt.timedelta(days=1)   # ago = maintenant - days 1 je sais pas comment l'expliquer  (calculer la date d'hier)
+  ago = now - dt.timedelta(days=1)   # ago = maintenant - days 1  (calculer la date d'hier)
     for root, dirs, files in chain.from_iterable(os.walk(path) for path in Vars['save']['paths']): # dans nos listes de dossier nous les prenons un par un ( os.walk lire le contenu du dossier path ) on le découpe en dossier et fichier 
     for fname in files:   # fname le chemin des fichier ( pour chaque fichier dans la liste des fichiers ) 
       path = os.path.join(root, fname)    # joindre le chemin en root 
