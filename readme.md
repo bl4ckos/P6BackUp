@@ -15,9 +15,7 @@ Version Python 3
 
 ### Installing
 
-Machine Wordpress :
-installez le serveur LAMP
-installez le serveur Wordpress
+installez le serveur web sous linux
 
 Les deux machines:
 
