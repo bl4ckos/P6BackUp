@@ -1,5 +1,5 @@
 # ======================================================================================================================
-# TITLE           : Sauvegarde wordpress sur site distant
+# TITLE           : Sauvegarde site web sur site distant
 # DESCRIPTION     :
 # - Sauvegarde de la bases de donnée présente sur le serveur
 # - Sauvegarde de la bases de donnée sur serveur distant
