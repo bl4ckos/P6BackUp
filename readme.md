@@ -2,7 +2,7 @@
 
 # Mode d'emploi fichier Py
 
-script de sauvegarde incrémentielle de donnée Wordpress et restauration
+script de sauvegarde incrémentielle de donnée et restauration
 
 ## Getting Started
 
