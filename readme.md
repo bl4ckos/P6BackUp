@@ -34,13 +34,13 @@ Adresse du serveur distant,
 Nom d'utilisateur,
 
 Indiquer un répértoire de backup,
-Indiquer le répertoire de wordpress,
+Indiquer le répertoire à sauvegarder,
 
 Configuration restore:
 Adresse du serveur distant,
 Nom d'utilisateur,
 Mot de passe,
-Indiquer le répertoire de wordpress,
+Indiquer le répertoire de sauvegarder ),
 
 ## Deployment
 
@@ -52,7 +52,7 @@ commande pour lancer une restore
 ./script.py restore backup.yaml
 
 ## Warning
-l'utilisateur devra prévoir l'emplacement du dump dans la conf yaml pour la BDD
+l'utilisateur devra prévoir l'emplacement du dump dans la conf yaml pour la BDD pour un site web
 
 ## Authors
 
